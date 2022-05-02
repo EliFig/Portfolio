@@ -53,6 +53,10 @@ a:hover {
   text-decoration: none;
   color: black;
 }
+.mr-5:hover {
+  width: 30px;
+  transition: all 100ms ease-in-out;
+}
 .first {
   margin-top: 130px;
 }
