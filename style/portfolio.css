@@ -1,6 +1,8 @@
 :root {
   --primary-color: #e6739f;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --heading-font-family: "Petrona", serif;
+  ---default-font-family: "Cabin", sans-serif;
 }
 body {
   max-width: 1300px;
@@ -12,8 +14,8 @@ body {
   );
 }
 h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 100px;
+  font-family: var(--heading-font-family);
+  font-size: 88px;
   animation: slide-up 1.5s ease;
 }
 h2 {
@@ -25,9 +27,32 @@ h3 {
 }
 h4 {
   font-size: 42px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
 }
 p {
-  font-size: 22px;
+  font-size: 21px;
+  font-family: var(---default-font-family);
+}
+.about-section {
+  text-align: initial;
+}
+.about-section h1 {
+  font-size: 65px;
+  font-family: var(--heading-font-family);
+}
+.about-section h3 {
+  opacity: 1;
+  font-size: 25px;
+}
+.about-section p {
+  padding-top: 20px;
+  font-size: 19px;
+  line-height: 30px;
+}
+.myphoto {
+  max-width: 100px;
+  border-radius: 18px;
 }
 .navegation-links a {
   margin-right: 10px;
@@ -53,9 +78,16 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-.mr-5:hover {
+.social:hover {
   width: 30px;
   transition: all 100ms ease-in-out;
+}
+.email {
+  font-size: 25px;
+  color: black;
+}
+.email:hover {
+  color: var(--primary-color);
 }
 .first {
   margin-top: 130px;
@@ -112,6 +144,10 @@ a:hover {
   }
   .portrait2 {
     display: none;
+  }
+  footer .email {
+    color: black;
+    font-size: 25px;
   }
 }
 @keyframes slide-up {
