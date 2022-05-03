@@ -34,8 +34,23 @@ p {
   font-size: 21px;
   font-family: var(---default-font-family);
 }
+.contact-info {
+  padding-left: 211px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.contact-info h2 {
+  margin: 15px 0px;
+  opacity: 0.9;
+}
+.contact-info a {
+  color: var(--primary-color);
+  line-height: 30px;
+  font-size: 19px;
+}
 .about-section {
   text-align: initial;
+  padding: 30px 60px;
 }
 .about-section h1 {
   font-size: 65px;
@@ -82,6 +97,14 @@ a:hover {
   width: 30px;
   transition: all 100ms ease-in-out;
 }
+footer .container {
+  padding: 30px 120px;
+  background-color: #f6e5e5;
+  border-radius: 18px;
+}
+footer .navegation-links {
+  margin-top: 34px;
+}
 .email {
   font-size: 25px;
   color: black;
@@ -93,7 +116,7 @@ a:hover {
   margin-top: 130px;
 }
 .second {
-  margin-top: 175px;
+  margin-top: 100px;
   color: black;
 }
 
