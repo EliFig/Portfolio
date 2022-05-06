@@ -184,6 +184,25 @@ footer .navegation-links {
   footer my-3 {
     font-size: 14px;
   }
+  .about-section {
+    padding: 0px 10px;
+  }
+  .about-section .navegation-links {
+    display: block;
+    text-align: center;
+  }
+  .contact-info {
+    padding: 10px 5px;
+  }
+  .contact-info h1 {
+    font-size: 60px;
+  }
+  .contact-info h2 {
+    font-size: 23px;
+  }
+  .contact-info a {
+    font-size: 18px;
+  }
 }
 @keyframes slide-up {
   0% {
