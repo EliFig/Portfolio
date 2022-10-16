@@ -1,17 +1,12 @@
 :root {
-  --primary-color: #e6739f;
+  --primary-color:#8c81f3;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font-family: "Petrona", serif;
   ---default-font-family: "Cabin", sans-serif;
 }
 body {
-  max-width: 1300px;
+      max-width: 1400%;
   text-align: center;
-  background: linear-gradient(
-    149deg,
-    rgba(255, 255, 255, 1) 42%,
-    rgba(243, 236, 245, 1) 97%
-  );
 }
 h1 {
   font-family: var(--heading-font-family);
@@ -98,8 +93,9 @@ a:hover {
   transition: all 100ms ease-in-out;
 }
 footer .container {
+  color: white;
   padding: 30px 120px;
-  background-color: #f6e5e5;
+  background-color: black;
   border-radius: 18px;
 }
 footer .navegation-links {
@@ -113,7 +109,11 @@ footer .navegation-links {
   color: var(--primary-color);
 }
 .first {
-  margin-top: 130px;
+  color: white;
+  height: 600px;
+  margin-top: 2px;
+    padding-top: 72px;
+    background-image: url("background.jpg") !important;
 }
 .second {
   margin-top: 100px;
@@ -130,7 +130,7 @@ footer .navegation-links {
   max-width: 85%;
 }
 .portrait2 {
-  width: 95%;
+  width: 120%;
   border-radius: 9999px;
   margin-top: -43px;
   margin-left: -193px;
