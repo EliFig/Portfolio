@@ -1,16 +1,28 @@
 :root {
   --primary-color:#8c81f3;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  --heading-font-family: "Petrona", serif;
-  ---default-font-family: "Cabin", sans-serif;
+  --heading-font-family:'Roboto Mono', monospace;
+  --default-font-family:'Roboto Mono',
+    monospace;
 }
 body {
       max-width: 1400%;
   text-align: center;
+  font-family: var(---default-font-family);
+
 }
-h1 {
+.first {
   font-family: var(--heading-font-family);
-  font-size: 88px;
+  color: white;
+  height: 600px;
+  margin-top: 2px;
+  padding-top: 72px;
+  background-image: url("background.jpg");
+}
+
+.first h1 {
+font-weight:700;
+  font-size: 70px;
   animation: slide-up 1.5s ease;
 }
 h2 {
@@ -20,43 +32,36 @@ h2 {
 h3 {
   opacity: 0.8;
 }
-h4 {
-  font-size: 42px;
-  font-family: var(--heading-font-family);
+.second h4 {
+  font-size: 45px;
   font-weight: 600;
 }
 p {
   font-size: 21px;
-  font-family: var(---default-font-family);
+  font-family: var(--default-font-family);
 }
-.contact-info {
-  padding-left: 211px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-}
-.contact-info h2 {
-  margin: 15px 0px;
-  opacity: 0.9;
-}
-.contact-info a {
-  color: var(--primary-color);
-  line-height: 30px;
-  font-size: 19px;
+.img-fluid{
+  padding: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: #fff9f9;
+    box-shadow: var(--box-shadow);
 }
 .about-section {
   text-align: initial;
   padding: 30px 60px;
 }
 .about-section h1 {
-  font-size: 65px;
+  font-size: 62px;
   font-family: var(--heading-font-family);
 }
 .about-section h3 {
   opacity: 1;
-  font-size: 25px;
+  font-size: 26px;
+    font-weight: 600;
 }
 .about-section p {
-  padding-top: 20px;
+  padding-top: 35px;
   font-size: 19px;
   line-height: 30px;
 }
@@ -74,6 +79,16 @@ p {
   text-transform: capitalize;
   box-shadow: var(--box-shadow);
 }
+.navegation-links a:hover {
+  margin-right: 10px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: white;
+  padding: 20px;
+  text-transform: capitalize;
+  box-shadow: var(--box-shadow);
+}
 .launch {
   border-radius: 18px;
   text-decoration: none;
@@ -83,6 +98,16 @@ p {
   padding: 20px;
   text-transform: capitalize;
   box-shadow: var(--box-shadow);
+}
+.launch:hover{
+  border-radius: 18px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    text-transform: capitalize;
+    box-shadow: var(--box-shadow);
 }
 a:hover {
   text-decoration: none;
@@ -108,13 +133,6 @@ footer .navegation-links {
 .email:hover {
   color: var(--primary-color);
 }
-.first {
-  color: white;
-  height: 600px;
-  margin-top: 2px;
-    padding-top: 72px;
-    background-image: url("background.jpg") !important;
-}
 .second {
   margin-top: 100px;
   color: black;
@@ -130,7 +148,7 @@ footer .navegation-links {
   max-width: 85%;
 }
 .portrait2 {
-  width: 120%;
+  width: 130%;
   border-radius: 9999px;
   margin-top: -43px;
   margin-left: -193px;
@@ -138,38 +156,21 @@ footer .navegation-links {
 .content-container {
   padding: 60px 20px;
 }
-.work-1,
-.work-2 {
-  margin: 60px 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  border-radius: 20px;
-  background-color: #fff9f9;
-  box-shadow: var(--box-shadow);
-}
-.work-1 {
-  animation: slide-right 1.5s ease;
-}
-.work-h1 {
-  font-size: 65px;
-}
-.work-p {
-  opacity: 0.8;
-  font-size: 18px;
-}
-.work-pic {
-  max-width: 40%;
-}
 .nav-link {
   font-family: var(---default-font-family);
 }
 .nav-link:hover {
-  color: var(--primary-color) !important;
+    color: var(--primary-color) !important;
+  }
+  
+.endOfFooter{
+  text-align: center;
 }
 
 @media (max-width: 576px) {
   h1 {
     font-size: 75px;
+    font-family: var(--heading-font-family);
   }
   h2 {
     font-size: 26px;
@@ -188,9 +189,11 @@ footer .navegation-links {
   .first {
     margin-top: 40px;
     margin-bottom: -70px;
+    text-align: center;
   }
   .second {
     padding-top: 0px !important;
+    text-align: center;
   }
   .img-fluid {
     display: none;
@@ -233,14 +236,6 @@ footer .navegation-links {
   }
   .contact-info a {
     font-size: 18px;
-  }
-  .work-h1 {
-    font-size: 53px;
-  }
-  .work-1,
-  .work-2 {
-    padding-top: 1px;
-    padding-bottom: 40px;
   }
 }
 @keyframes slide-up {
