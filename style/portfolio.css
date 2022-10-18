@@ -17,7 +17,7 @@ body {
   height: 600px;
   margin-top: 2px;
   padding-top: 72px;
-  background-image: url("background.jpg");
+  background-image: url("../image/background.jpg");
 }
 
 .first h1 {
@@ -46,28 +46,6 @@ p {
     border-radius: 20px;
     background-color: #fff9f9;
     box-shadow: var(--box-shadow);
-}
-.about-section {
-  text-align: initial;
-  padding: 30px 60px;
-}
-.about-section h1 {
-  font-size: 62px;
-  font-family: var(--heading-font-family);
-}
-.about-section h3 {
-  opacity: 1;
-  font-size: 26px;
-    font-weight: 600;
-}
-.about-section p {
-  padding-top: 35px;
-  font-size: 19px;
-  line-height: 30px;
-}
-.myphoto {
-  max-width: 100px;
-  border-radius: 18px;
 }
 .navegation-links a {
   margin-right: 10px;
@@ -144,17 +122,11 @@ footer .navegation-links {
 .section-title {
   font-size: 58px;
 }
-.img-fluid {
-  max-width: 85%;
-}
 .portrait2 {
   width: 130%;
   border-radius: 9999px;
   margin-top: -43px;
   margin-left: -193px;
-}
-.content-container {
-  padding: 60px 20px;
 }
 .nav-link {
   font-family: var(---default-font-family);
