@@ -1,5 +1,32 @@
-h2{
-    font-size: 30px;
-    color:red;
+:root {
+    --primary-color: #8c81f3;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --heading-font-family: 'Roboto Mono', monospace;
+    --default-font-family: 'Roboto Mono',
+        monospace;
+}
+.about-section {
+    text-align: initial;
+    padding: 30px 60px;
+}
 
+.about-section h1 {
+    font-size: 62px;
+    font-family: var(--heading-font-family);
+}
+
+.about-section h3 {
+    opacity: 1;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.about-section p {
+    padding-top: 35px;
+    font-size: 19px;
+    line-height: 30px;
+}
+.myphoto {
+    max-width: 85%;
+    border-radius: 18px;
 }
