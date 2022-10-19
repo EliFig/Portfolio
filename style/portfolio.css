@@ -91,9 +91,12 @@ a:hover {
   text-decoration: none;
   color: black;
 }
-.social:hover {
-  width: 30px;
+.social{
+width: 30px;
   transition: all 100ms ease-in-out;
+}
+.social:hover {
+  transform: scale(1.1);
 }
 footer .container {
   color: white;
@@ -103,6 +106,12 @@ footer .container {
 }
 footer .navegation-links {
   margin-top: 34px;
+}
+footer h4{
+  font-size: 41px;
+}
+footer p{
+  margin-bottom: 18px;
 }
 .email {
   font-size: 25px;
